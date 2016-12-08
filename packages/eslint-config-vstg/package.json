@@ -1,0 +1,42 @@
+{
+  "name": "eslint-config-vstg",
+  "version": "1.0.0",
+  "description": "",
+  "main": "eslint.js",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VivintSolar/code-styles.git"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "config",
+    "vstg",
+    "javascript",
+    "styleguide"
+  ],
+  "author": "Dan Crews <crewsd@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/VivintSolar/code-styles/issues"
+  },
+  "homepage": "https://github.com/VivintSolar/code-styles#readme",
+  "devDependencies": {
+    "eslint": "^3.11.1",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-node": "^3.0.5",
+    "eslint-plugin-promise": "^3.4.0",
+    "eslint-plugin-react": "^6.8.0"
+  },
+  "peerDependencies": {
+    "eslint": "^3.11.1",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-node": "^3.0.5",
+    "eslint-plugin-promise": "^3.4.0",
+    "eslint-plugin-react": "^6.8.0"
+  }
+}

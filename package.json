@@ -1,0 +1,30 @@
+{
+  "name": "vstg-code-styles",
+  "version": "3.10.0",
+  "description": "",
+  "scripts": {
+    "preinstall": "npm run install:config",
+    "install:config": "cd packages/eslint-config-vstg && npm prune && npm install",
+    "test": "npm run --silent test:config",
+    "test:config": "cd packages/eslint-config-vstg; npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VivintSolar/code-styles.git"
+  },
+  "keywords": [
+    "style guide",
+    "lint",
+    "vstg",
+    "es6",
+    "es2015",
+    "react",
+    "jsx"
+  ],
+  "author": "Dan Crews <crewsd@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/VivintSolar/code-styles/issues"
+  },
+  "homepage": "https://github.com/VivintSolar/code-styles#readme"
+}
