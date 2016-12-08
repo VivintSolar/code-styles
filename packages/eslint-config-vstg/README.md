@@ -12,7 +12,9 @@ See [ESlint config docs](http://eslint.org/docs/user-guide/configuring#extending
 
 ### eslint-config-vstg
 
-Our default export contains all of our ESLint rules, including ECMAScript 6. It requires `eslint`, `eslint-plugin-node`, and `eslint-plugin-promise`.
+Our default export contains all of our ESLint rules, including ECMAScript 6.
+
+It requires `eslint`, `eslint-plugin-node`, and `eslint-plugin-promise`.
 
 1. Ensure packages are installed with correct version numbers by running:
   ```sh
@@ -38,12 +40,16 @@ This export is used for all lambda-based code. The only difference it it sets th
 
 ### eslint-config-vstg/modules
 
-This export is used for implementations that support [Harmony Modules](http://www.2ality.com/2013/07/es6-modules.html) (so probably Babel)
+This export is used for implementations that support [Harmony Modules](http://www.2ality.com/2013/07/es6-modules.html) (so probably Babel).
+
+It additionally requires `eslint-plugin-import`.
 
 
 ### eslint-config-vstg/react
 
 This export is used for React.js implementations. They should also be using Babel/Webpack or something for delivery, so it includes Harmony Modules.
+
+It additionally requires `eslint-plugin-react`
 
 
 ## How can we improve this config?
