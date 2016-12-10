@@ -2,7 +2,7 @@
 module.exports = {
   rules: {
     'no-cond-assign': [ 2, 'except-parens' ],
-    'no-console': 1,
+    'no-console': 0,
     'no-constant-condition': 1,
     'no-control-regex': 2,
     'no-debugger': 2,
@@ -29,7 +29,7 @@ module.exports = {
     'no-unsafe-finally': 2,
     'no-unsafe-negation': 2,
     'use-isnan': 2,
-    'valid-jsdoc': 1,
+    'valid-jsdoc': 0,
     'valid-typeof': 2,
   },
 };

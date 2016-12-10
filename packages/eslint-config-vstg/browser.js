@@ -2,6 +2,6 @@
 module.exports = {
   extends: [
     './index',
-    './rules/node4',
+    './rules/browser-support',
   ].map(require.resolve),
 };

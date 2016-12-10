@@ -9,6 +9,7 @@ module.exports = {
   },
   'plugins': [
     'import',
+    'node',
   ],
 
   settings: {
@@ -25,37 +26,38 @@ module.exports = {
     },
   },
   rules: {
+    'node/no-unsupported-features': 0,
 
     // Static analysis:
-    'no-unresolved': 2,
-    'named': 0,
-    'default': 0,
-    'namespace': 0,
-    'no-restricted-paths': 0,
-    'no-absolute-path': 2,
-    'no-dynamic-require': 2,
-    'no-internal-modules': 0,
-    'no-webpack-loader-syntax': 2,
+    'import/no-unresolved': 2,
+    'import/named': 0,
+    'import/default': 0,
+    'import/namespace': 0,
+    'import/no-restricted-paths': 0,
+    'import/no-absolute-path': 2,
+    'import/no-dynamic-require': 2,
+    'import/no-internal-modules': 0,
+    'import/no-webpack-loader-syntax': 2,
 
     // Helpful warnings:
-    'export': 2,
-    'no-named-as-default': 2,
-    'no-named-as-default-member': 2,
-    'no-deprecated': 0,
-    'no-extraneous-dependencies': 0,
-    'no-mutable-exports': 2,
+    'import/export': 2,
+    'import/no-named-as-default': 2,
+    'import/no-named-as-default-member': 2,
+    'import/no-deprecated': 0,
+    'import/no-extraneous-dependencies': 0,
+    'import/no-mutable-exports': 2,
 
     // Module systems:
-    'unambiguous': 0,
-    'no-commonjs': 0,
-    'no-amd': 0,
-    'no-nodejs-modules': 0,
+    'import/unambiguous': 0,
+    'import/no-commonjs': 0,
+    'import/no-amd': 0,
+    'import/no-nodejs-modules': 0,
 
     // Style guide:
-    'first': [ 2, 'absolute-first' ],
-    'no-duplicates': 2,
-    'no-namespace': 0,
-    'extensions': [
+    'import/first': [ 2, 'absolute-first' ],
+    'import/no-duplicates': 2,
+    'import/no-namespace': 0,
+    'import/extensions': [
       2,
       'always',
       {
@@ -63,11 +65,11 @@ module.exports = {
         'jsx': 'never',
       },
     ],
-    'order': 0,
-    'newline-after-import': 2,
-    'prefer-default-export': 2,
-    'max-dependencies': 0,
-    'no-unassigned-import': 0,
-    'no-named-default': 2,
+    'import/order': 0,
+    'import/newline-after-import': 2,
+    'import/prefer-default-export': 2,
+    'import/max-dependencies': 0,
+    'import/no-unassigned-import': 0,
+    'import/no-named-default': 2,
   },
 };

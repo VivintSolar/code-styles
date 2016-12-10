@@ -10,6 +10,5 @@ module.exports = {
       'experimentalObjectRestSpread': true,
       'jsx': true,
     },
-    'sourceType': 'module',
   },
 };

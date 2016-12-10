@@ -1,6 +1,6 @@
 
 module.exports = {
   rules: {
-    'strict': 1,
+    'strict': 0,
   },
 };
