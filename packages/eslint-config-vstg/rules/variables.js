@@ -12,6 +12,6 @@ module.exports = {
     'no-undef': 2,
     'no-undefined': 2,
     'no-unused-vars': 2,
-    'no-use-before-define': [ 2, { 'functions': false }],
+    'no-use-before-define': [ 2, { 'functions': false } ],
   },
 };

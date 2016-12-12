@@ -2,7 +2,7 @@
 module.exports = {
   rules: {
     'no-cond-assign': [ 2, 'except-parens' ],
-    'no-console': 1,
+    'no-console': 2,
     'no-constant-condition': 1,
     'no-control-regex': 2,
     'no-debugger': 2,
@@ -20,7 +20,7 @@ module.exports = {
     'no-invalid-regexp': 2,
     'no-irregular-whitespace': 2,
     'no-obj-calls': 2,
-    'no-prototype-builtins': 0, // Perhaps this should be revisited with Reflection
+    'no-prototype-builtins': 0,
     'no-regex-spaces': 2,
     'no-sparse-arrays': 2,
     'no-template-curly-in-string': 2,

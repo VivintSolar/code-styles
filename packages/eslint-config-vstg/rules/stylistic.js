@@ -1,31 +1,25 @@
 
 module.exports = {
   rules: {
-    'array-bracket-spacing': [
-      2,
-      'always',
-      {
-        'objectsInArrays': false,
-        'arraysInArrays': false,
-      },
-    ],
+    'array-bracket-spacing': [ 2, 'always' ],
     'block-spacing': [ 2, 'always' ],
-    'brace-style': [ 2, '1tbs', { 'allowSingleLine': true }],
-    'camelcase': 1, // We should talk about this. I like camelcase, but snake is easy
+    'brace-style': 2,
+    'camelcase': 1,
     'capitalized-comments': 0,
     'comma-dangle': [ 2, 'always-multiline' ],
-    'comma-spacing': [ 2, { 'before': false, 'after': true }],
-    'comma-style': 1,
-    'computed-property-spacing': [ 2, 'never' ],
+    'comma-spacing': 2,
+    'comma-style': 2,
+    'computed-property-spacing': [ 2, 'always' ],
     'consistent-this': 0,
     'eol-last': 2,
-    'func-call-spacing': [ 2, 'never' ],
+    'func-call-spacing': 2,
     'func-name-matching': 0,
     'func-names': 0,
-    'func-style': [ 1, 'expression' ],
+    'func-style': 0,
     'id-blacklist': 0,
     'id-length': 0,
     'id-match': 0,
+
     'indent': [
       2,
       2,
@@ -50,29 +44,26 @@ module.exports = {
         },
       },
     ],
-    'jsx-quotes': 1,
-    'key-spacing': [
-      2,
+
+    'jsx-quotes': 2,
+
+    'key-spacing': [ 2,
       {
-        'beforeColon': false,
-        'afterColon': true,
-        'mode': 'strict', // or at least `minimum`
-        // 'align': 'value' // Someone convince me?
+      'beforeColon': false,
+      'afterColon': true,
+      'mode': 'minimum',
+      'align': 'value',
       },
     ],
-    'keyword-spacing': [
-      2,
-      {
-        'before': true,
-        'after': true,
-      },
-    ],
+
+    'keyword-spacing': 2,
     'line-comment-position': 0,
-    'linebreak-style': [ 2, 'unix' ],
+    'linebreak-style': 2,
     'lines-around-comment': 0,
     'lines-around-directive': 2,
-    'max-depth': [ 1, { max: 5 }],
+    'max-depth': [ 1, { max: 5 } ],
     'max-len': 0,
+
     'max-lines': [
       1,
       {
@@ -81,8 +72,9 @@ module.exports = {
         'skipComments': true,
       },
     ],
-    'max-nested-callbacks': 1,
-    'max-params': [ 1, { max: 8 }],
+
+    'max-nested-callbacks': [ 1, { max: 4} ],
+    'max-params': [ 1, { max: 8 } ],
     'max-statements-per-line': 2,
     'max-statements': 0,
     'multiline-ternary': 0,
@@ -90,76 +82,53 @@ module.exports = {
     'new-parens': 2,
     'newline-after-var': 2,
     'newline-before-return': 2,
-    'newline-per-chained-call': [ 1, { 'ignoreChainWithDepth': 3 }],
-    'no-array-constructor': 1,
+    'newline-per-chained-call': 0,
+    'no-array-constructor': 2,
+
     'no-bitwise': [
       2,
       {
         'allow': [ '~' ],
       },
     ],
+
     'no-continue': 0,
     'no-inline-comments': 0,
     'no-lonely-if': 2,
-    'no-mixed-operators': 1,
+    'no-mixed-operators': 2,
     'no-mixed-spaces-and-tabs': 2,
-    'no-multiple-empty-lines': [
-      1,
-      {
-        'max': 3,
-      },
-    ],
+    'no-multiple-empty-lines': 2,
     'no-negated-condition': 2,
     'no-nested-ternary': 2,
     'no-new-object': 2,
     'no-plusplus': 0,
     'no-restricted-syntax': 0,
     'no-tabs': 2,
-    'no-ternary': 0,
+    'no-ternary': 2,
     'no-trailing-spaces': 2,
-    'no-underscore-dangle': 0,
+    'no-underscore-dangle': 2,
     'no-unneeded-ternary': 2,
     'no-whitespace-before-property': 2,
-    'object-curly-newline': 0,
-    'object-curly-spacing': [
-      2,
-      'always',
-      {
-        'arraysInObjects': false,
-        'objectsInObjects': false,
-      },
-    ],
-    'object-property-newline': 0,
-    'one-var-declaration-per-line': [ 2, 'initializations' ],
-    'one-var': 0,
+    'object-curly-newline': 2,
+    'object-curly-spacing': [ 2 'always' ],
+    'object-property-newline': 2,
+    'one-var-declaration-per-line': 2,
+    'one-var': [ 2, 'never' ],
     'operator-assignment': 0,
     'operator-linebreak': 0,
-    'padded-blocks': [
-      1,
-      {
-        'blocks': 'never',
-        'classes': 'always',
-        'switches': 'never',
-      },
-    ],
-    'quote-props': [ 2, 'consistent-as-needed' ],
-    'quotes': [
-      2,
-      'single',
-      {
-        'avoidEscape': true,
-        'allowTemplateLiterals': true,
-      },
-    ],
+    'padded-blocks': [ 1, 'never' ],
+    'quote-props': [ 2, 'as-needed' ],
+    'quotes': [ 2, 'single' ],
     'require-jsdoc': 0,
     'semi-spacing': 2,
-    'semi': [ 1, 'always' ],
+    'semi': 2,
     'sort-keys': 0,
     'sort-vars': 0,
-    'space-before-blocks': [ 2, 'always' ],
-    'space-before-function-paren': [ 2, 'never' ],
-    'space-in-parens': 0,
+    'space-before-blocks': 2,
+    'space-before-function-paren': [ 2, { "anonymous": "always", "named": "never" } ],
+    'space-in-parens': 2,
     'space-infix-ops': 2,
+
     'space-unary-ops': [
       2,
       {
@@ -167,6 +136,7 @@ module.exports = {
         'nonwords': false,
       },
     ],
+
     'spaced-comment': 0,
     'unicode-bom': 0,
     'wrap-regex': 0,
