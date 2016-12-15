@@ -47,12 +47,13 @@ module.exports = {
 
     'jsx-quotes': 2,
 
-    'key-spacing': [ 2,
+    'key-spacing': [
+      2,
       {
-      'beforeColon': false,
-      'afterColon': true,
-      'mode': 'minimum',
-      'align': 'value',
+        'beforeColon': false,
+        'afterColon': true,
+        'mode': 'minimum',
+        'align': 'value',
       },
     ],
 
@@ -110,7 +111,7 @@ module.exports = {
     'no-unneeded-ternary': 2,
     'no-whitespace-before-property': 2,
     'object-curly-newline': 2,
-    'object-curly-spacing': [ 2 'always' ],
+    'object-curly-spacing': [ 2, 'always' ],
     'object-property-newline': 2,
     'one-var-declaration-per-line': 2,
     'one-var': [ 2, 'never' ],
