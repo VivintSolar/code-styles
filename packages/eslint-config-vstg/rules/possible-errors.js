@@ -20,7 +20,7 @@ module.exports = {
     'no-invalid-regexp': 2,
     'no-irregular-whitespace': 2,
     'no-obj-calls': 2,
-    'no-prototype-builtins': 0,
+    'no-prototype-builtins': 0, // Review end of Q1/2017. Reflect should replace the need for builtins
     'no-regex-spaces': 2,
     'no-sparse-arrays': 2,
     'no-template-curly-in-string': 2,

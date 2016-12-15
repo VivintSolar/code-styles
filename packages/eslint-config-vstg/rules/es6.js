@@ -2,7 +2,7 @@
 module.exports = {
   rules: {
     'arrow-body-style': [ 2, 'always' ],
-    'arrow-parens': [ 2, 'as-needed', { 'requireForBlockBody': true, } ],
+    'arrow-parens': [ 2, 'as-needed', { 'requireForBlockBody': true } ],
     'arrow-spacing': 2,
     'constructor-super': 2,
     'generator-star-spacing': 2,
@@ -19,17 +19,17 @@ module.exports = {
     'no-useless-rename': 0,
     'no-var': 2,
     'object-shorthand': 2,
-    'prefer-arrow-callback': 0,
-    'prefer-const': 2,
+    'prefer-arrow-callback': 0, // Review end of Q1/2017
+    'prefer-const': [ 2, { 'destructuring': 'all' } ],
     'prefer-numeric-literals': 0,
     'prefer-rest-params': 2,
     'prefer-spread': 1,
-    'prefer-template': 2,
+    'prefer-template': 2, // Review end of Q1/2017
     'require-yield': 1,
     'rest-spread-spacing': 2,
     'sort-imports': 0,
     'symbol-description': 2,
-    'template-curly-spacing': [ 2, 'never' ],
+    'template-curly-spacing': [ 2, 'always' ],
     'yield-star-spacing': 2,
   },
 };

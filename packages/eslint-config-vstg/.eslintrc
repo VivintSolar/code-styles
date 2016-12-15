@@ -1,6 +1,7 @@
 {
   "extends": "./index.js",
   "rules": {
-    "quote-props": 0
+    "quote-props": 0,
+    "no-magic-numbers": 0 // Take this out when we change them
   }
 }

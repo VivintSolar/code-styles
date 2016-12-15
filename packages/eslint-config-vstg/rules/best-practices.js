@@ -36,18 +36,8 @@ module.exports = {
     'no-labels': 2,
     'no-lone-blocks': 2,
     'no-loop-func': 2,
-    'no-magic-numbers': 1,
-
-    'no-multi-spaces': [
-      2,
-      {
-      'exceptions': {
-        'Property': true,
-        'VariableDeclarator': true,
-        'ImportDeclaration': true,
-      },
-    }],
-
+    'no-magic-numbers': [ 1, { ignoreArrayIndexes: true } ], // Review end of Q1/2017
+    'no-multi-spaces': 2,
     'no-multi-str': 2,
     'no-new-func': 2,
     'no-new-wrappers': 2,
@@ -57,8 +47,8 @@ module.exports = {
     'no-param-reassign': 0,
     'no-proto': 2,
     'no-redeclare': 2,
-    'no-restricted-properties': 1,
-    'no-return-assign': 2,
+    'no-restricted-properties': 0,
+    'no-return-assign': [ 2, 'except-parens' ],
     'no-return-await': 0,
     'no-script-url': 2,
     'no-self-assign': 2,
@@ -77,8 +67,8 @@ module.exports = {
     'no-with': 2,
     'radix': 1,
     'require-await': 0,
-    'vars-on-top': 2,
-    'wrap-iife': 2,
+    'vars-on-top': 0,
+    'wrap-iife': [ 2, 'inside' ],
     'yoda': 2,
   },
 };
