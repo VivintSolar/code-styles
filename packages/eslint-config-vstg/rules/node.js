@@ -12,6 +12,7 @@ module.exports = {
     'no-process-exit': 1,
     'no-restricted-modules': 0,
     'no-sync': 0,
+
     'node/no-unsupported-features': [ 2, { 'version': 6 } ],
   },
 };

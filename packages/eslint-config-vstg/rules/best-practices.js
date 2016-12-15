@@ -29,7 +29,7 @@ module.exports = {
     'no-floating-decimal': 2,
     'no-global-assign': 2,
     'no-implicit-coercion': 0,
-    'no-implicit-globals': 2,
+    'no-implicit-globals': 0,
     'no-implied-eval': 2,
     'no-invalid-this': 2,
     'no-iterator': 2,
