@@ -88,8 +88,8 @@ module.exports = {
     'multiline-ternary': 0,
     'new-cap': 1,
     'new-parens': 2,
-    'newline-after-var': 0,
-    'newline-before-return': 0,
+    'newline-after-var': 2,
+    'newline-before-return': 2,
     'newline-per-chained-call': [ 1, { 'ignoreChainWithDepth': 3 }],
     'no-array-constructor': 1,
     'no-bitwise': [
