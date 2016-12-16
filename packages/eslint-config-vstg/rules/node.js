@@ -2,16 +2,17 @@
 module.exports = {
   plugins: [ 'node' ],
   rules: {
-    'callback-return': [ 2, [ 'callback', 'cb', 'next', 'done' ] ],
-    'global-require': 1,
-    'handle-callback-err': 2,
-    'no-mixed-requires': 2,
-    'no-new-require': 1,
-    'no-path-concat': 2,
-    'no-process-env': 0,
-    'no-process-exit': 1,
-    'no-restricted-modules': 0,
-    'no-sync': 0,
-    'node/no-unsupported-features': [ 2, { 'version': 6 }],
+    'callback-return': [ 'error', [ 'callback', 'cb', 'next', 'done' ] ],
+    'global-require': 'warn',
+    'handle-callback-err': 'error',
+    'no-mixed-requires': 'error',
+    'no-new-require': 'error',
+    'no-path-concat': 'error',
+    'no-process-env': 'off',
+    'no-process-exit': 'warn',
+    'no-restricted-modules': 'off',
+    'no-sync': 'off',
+
+    'node/no-unsupported-features': [ 'error', { 'version': 6 } ],
   },
 };
