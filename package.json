@@ -26,5 +26,6 @@
   "bugs": {
     "url": "https://github.com/VivintSolar/code-styles/issues"
   },
-  "homepage": "https://github.com/VivintSolar/code-styles#readme"
+  "homepage": "https://github.com/VivintSolar/code-styles#readme",
+  "private": true
 }
