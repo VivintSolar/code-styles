@@ -93,7 +93,7 @@ module.exports = {
 
     'react/jsx-boolean-value': [ 'error', 'never' ],
     'react/jsx-closing-bracket-location': [ 'error', 'line-aligned' ],
-    'react/jsx-curly-spacing': [ 'error', 'never', { allowMultiline: true } ],
+    'react/jsx-curly-spacing': [ 'error', 'always', { allowMultiline: true } ],
     'react/jsx-equals-spacing': [ 'error', 'never' ],
     'react/jsx-filename-extension': [ 'error', { extensions: [ '.jsx' ] } ],
     'react/jsx-first-prop-new-line': [ 'error', 'multiline' ],
