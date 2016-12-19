@@ -14,20 +14,10 @@ See [ESlint config docs](http://eslint.org/docs/user-guide/configuring#extending
 
 Our default export contains all of our ESLint rules, including ECMAScript 6.
 
-It requires `eslint`, `eslint-plugin-node`, and `eslint-plugin-promise`.
-
-1. Ensure packages are installed with correct version numbers by running:
-  ```sh
-  (
-    export PKG=eslint-config-vstg;
-    npm info "$PKG@latest" peerDependencies --json | command sed 's/[\{\},]//g ; s/: /@/g' | xargs npm install --save-dev "$PKG@latest"
-  )
-  ```
-
-  Which produces and runs a command like:
+1. Install the package:
 
   ```sh
-  npm install --save-dev eslint-config-vstg eslint@^#.#.# eslint-plugin-import@^#.#.# eslint-plugin-node@^#.#.# eslint-plugin-promise@^#.#.# eslint-plugin-react@^#.#.#
+  npm install --save-dev eslint-config-vstg
   ```
 
 2. Add `"extends": "vstg"` to your .eslintrc
@@ -50,16 +40,12 @@ Add `"extends": "vstg/lambda"` or `"extends": [ "vstg", "vstg/lambda"]` to your 
 
 This export is used for implementations that support [Harmony Modules](http://www.2ality.com/2013/07/es6-modules.html) (so probably Babel).
 
-It additionally requires `eslint-plugin-import`.
-
 Add `"extends": "vstg/modules"` or `"extends": [ "vstg", "vstg/modules"]` to your .eslintrc
 
 
 ### vstg/react
 
 This export is used for React.js implementations. They should also be using Babel/Webpack or something for delivery, so it includes Harmony Modules.
-
-It additionally requires `eslint-plugin-react`
 
 Add `"extends": "vstg/react"` or `"extends": [ "vstg", "vstg/react"]` to your .eslintrc
 
