@@ -35,6 +35,12 @@ This export is used for all lambda-based code. The only difference it it sets th
 
 Add `"extends": "vstg/lambda"` or `"extends": [ "vstg", "vstg/lambda"]` to your .eslintrc
 
+### vstg/testing
+
+This export is easy for all testing code. It adds the `mocha`, `jest`, and `jasmine` environments, and it allows things like magic numbers, and console.logs.
+
+Add `"extends": "vstg/testing"` or `"extends": [ "vstg", "vstg/testing"]` to the .eslintrc in your testing directory
+
 
 ### vstg/modules
 
