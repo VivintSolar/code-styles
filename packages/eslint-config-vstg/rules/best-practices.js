@@ -36,7 +36,13 @@ module.exports = {
     'no-labels': 'error',
     'no-lone-blocks': 'error',
     'no-loop-func': 'error',
-    'no-magic-numbers': [ 'warn', { ignoreArrayIndexes: true } ], // Review end of Q1/2017
+    'no-magic-numbers': [
+      'warn',
+      {
+        ignoreArrayIndexes: true,
+        ignore: [ 1 ], // For the sake of (array.length - 1)
+      },
+    ], // Review end of Q1/2017
     'no-multi-spaces': 'error',
     'no-multi-str': 'error',
     'no-new-func': 'error',
