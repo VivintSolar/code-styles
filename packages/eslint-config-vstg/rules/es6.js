@@ -1,8 +1,7 @@
-
 module.exports = {
   rules: {
     'arrow-body-style': [ 'error', 'always' ],
-    'arrow-parens': [ 'error', 'as-needed', { 'requireForBlockBody': true } ],
+    'arrow-parens': [ 'error', 'as-needed', { requireForBlockBody: true } ],
     'arrow-spacing': 'error',
     'constructor-super': 'error',
     'generator-star-spacing': 'error',
@@ -20,7 +19,7 @@ module.exports = {
     'no-var': 'error',
     'object-shorthand': 'error',
     'prefer-arrow-callback': 'off', // Review end of Q1/2017
-    'prefer-const': [ 'error', { 'destructuring': 'all' } ],
+    'prefer-const': [ 'error', { destructuring: 'all' } ],
     'prefer-numeric-literals': 'off',
     'prefer-rest-params': 'error',
     'prefer-spread': 'warn',

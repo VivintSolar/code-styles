@@ -11,14 +11,7 @@
     "type": "git",
     "url": "git+https://github.com/VivintSolar/code-styles.git"
   },
-  "keywords": [
-    "eslint",
-    "eslintconfig",
-    "config",
-    "vstg",
-    "javascript",
-    "styleguide"
-  ],
+  "keywords": ["eslint", "eslintconfig", "config", "vstg", "javascript", "styleguide"],
   "author": "Dan Crews <crewsd@gmail.com>",
   "license": "MIT",
   "bugs": {

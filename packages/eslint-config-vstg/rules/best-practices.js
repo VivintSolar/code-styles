@@ -1,17 +1,16 @@
-
 module.exports = {
   rules: {
     'accessor-pairs': 'error',
     'array-callback-return': 'error',
     'block-scoped-var': 'error',
     'class-methods-use-this': 'warn',
-    'complexity': 'off',
+    complexity: 'off',
     'consistent-return': 'error',
-    'curly': 'error',
+    curly: 'error',
     'default-case': 'error',
     'dot-location': [ 'error', 'property' ],
     'dot-notation': 'error',
-    'eqeqeq': 'error',
+    eqeqeq: 'error',
     'guard-for-in': 'error',
     'no-alert': 'warn',
     'no-caller': 'error',
@@ -71,10 +70,10 @@ module.exports = {
     'no-void': 'error',
     'no-warning-comments': 'off',
     'no-with': 'error',
-    'radix': 'warn',
+    radix: 'warn',
     'require-await': 'off',
     'vars-on-top': 'off',
     'wrap-iife': [ 'error', 'inside' ],
-    'yoda': 'error',
+    yoda: 'error',
   },
 };

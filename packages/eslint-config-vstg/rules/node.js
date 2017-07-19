@@ -1,4 +1,3 @@
-
 module.exports = {
   plugins: [ 'node' ],
   rules: {
@@ -13,6 +12,6 @@ module.exports = {
     'no-restricted-modules': 'off',
     'no-sync': 'off',
 
-    'node/no-unsupported-features': [ 'error', { 'version': 6 } ],
+    'node/no-unsupported-features': [ 'error', { version: 6 } ],
   },
 };

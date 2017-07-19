@@ -1,4 +1,3 @@
-
 module.exports = {
   rules: {
     'no-cond-assign': [ 'error', 'except-parens' ],

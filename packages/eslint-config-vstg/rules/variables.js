@@ -1,4 +1,3 @@
-
 module.exports = {
   rules: {
     'init-declarations': 'off',
@@ -12,6 +11,6 @@ module.exports = {
     'no-undef': 'error',
     'no-undefined': 'off',
     'no-unused-vars': 'error',
-    'no-use-before-define': [ 'off', { 'functions': false } ],
+    'no-use-before-define': [ 'off', { functions: false } ],
   },
 };

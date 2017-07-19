@@ -1,11 +1,5 @@
-
-const jsxIndentSize = 2;
-const jsxIndentPropsSize = 2;
-
 module.exports = {
-  'plugins': [
-    'react',
-  ],
+  plugins: [ 'react' ],
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
@@ -59,7 +53,7 @@ module.exports = {
     'react/no-direct-mutation-state': 'warn',
     'react/no-find-dom-node': 'error',
     'react/no-is-mounted': 'error',
-    'react/no-multi-comp': [ 'error', { 'ignoreStateless': true } ],
+    'react/no-multi-comp': [ 'error', { ignoreStateless: true } ],
     'react/no-render-return-value': 'error',
     'react/no-set-state': 'off',
     'react/no-string-refs': 'warn',
@@ -98,8 +92,8 @@ module.exports = {
     'react/jsx-filename-extension': [ 'error', { extensions: [ '.jsx' ] } ],
     'react/jsx-first-prop-new-line': [ 'error', 'multiline' ],
     'react/jsx-handler-names': 'off',
-    'react/jsx-indent': [ 'error', jsxIndentSize ],
-    'react/jsx-indent-props': [ 'error', jsxIndentPropsSize ],
+    'react/jsx-indent': [ 'error', 2 ],
+    'react/jsx-indent-props': [ 'error', 2 ],
     'react/jsx-key': 'error',
     'react/jsx-max-props-per-line': [ 'error', { maximum: 3 } ],
     'react/jsx-no-bind': 'error',

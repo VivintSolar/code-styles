@@ -1,12 +1,9 @@
-
-const indentSize = 2;
-
 module.exports = {
   rules: {
     'array-bracket-spacing': [ 'error', 'always' ],
     'block-spacing': [ 'error', 'always' ],
     'brace-style': 'error',
-    'camelcase': 'warn',
+    camelcase: 'warn',
     'capitalized-comments': 'off',
     'comma-dangle': [ 'error', 'always-multiline' ],
     'comma-spacing': 'error',
@@ -22,27 +19,27 @@ module.exports = {
     'id-length': 'off',
     'id-match': 'off',
 
-    'indent': [
+    indent: [
       'error',
-      indentSize,
+      2,
       {
-        'SwitchCase': 1,
-        'VariableDeclarator': {
-          'var': 1,
-          'let': 1,
-          'const': 2,
+        SwitchCase: 1,
+        VariableDeclarator: {
+          var: 1,
+          let: 1,
+          const: 2,
         },
-        'MemberExpression': 1,
-        'FunctionDeclaration': {
-          'body': 1,
-          'parameters': 'first',
+        MemberExpression: 1,
+        FunctionDeclaration: {
+          body: 1,
+          parameters: 'first',
         },
-        'FunctionExpression': {
-          'body': 1,
-          'parameters': 'first',
+        FunctionExpression: {
+          body: 1,
+          parameters: 'first',
         },
-        'CallExpression': {
-          'arguments': 1,
+        CallExpression: {
+          arguments: 1,
         },
       },
     ],
@@ -52,9 +49,9 @@ module.exports = {
     'key-spacing': [
       'error',
       {
-        'beforeColon': false,
-        'afterColon': true,
-        'mode': 'minimum',
+        beforeColon: false,
+        afterColon: true,
+        mode: 'minimum',
       },
     ],
 
@@ -69,9 +66,9 @@ module.exports = {
     'max-lines': [
       'error',
       {
-        'max': 1000,
-        'skipBlankLines': true,
-        'skipComments': true,
+        max: 1000,
+        skipBlankLines: true,
+        skipComments: true,
       },
     ],
 
@@ -90,7 +87,7 @@ module.exports = {
     'no-bitwise': [
       'error',
       {
-        'allow': [ '~' ],
+        allow: [ '~' ],
       },
     ],
 
@@ -121,10 +118,10 @@ module.exports = {
     'operator-linebreak': 'off',
     'padded-blocks': [ 'error', 'never' ],
     'quote-props': [ 'error', 'as-needed' ],
-    'quotes': [ 'error', 'single' ],
+    quotes: [ 'error', 'single' ],
     'require-jsdoc': 'off',
     'semi-spacing': 'error',
-    'semi': 'error',
+    semi: 'error',
     'sort-keys': 'off',
     'sort-vars': 'off',
     'space-before-blocks': 'error',
@@ -135,8 +132,8 @@ module.exports = {
     'space-unary-ops': [
       'error',
       {
-        'words': true,
-        'nonwords': false,
+        words: true,
+        nonwords: false,
       },
     ],
 

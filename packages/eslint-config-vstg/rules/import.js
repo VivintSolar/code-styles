@@ -1,4 +1,3 @@
-
 module.exports = {
   env: {
     es6: true,
@@ -7,10 +6,7 @@ module.exports = {
     ecmaVersion: 6,
     sourceType: 'module',
   },
-  'plugins': [
-    'import',
-    'node',
-  ],
+  plugins: [ 'import', 'node' ],
 
   settings: {
     'import/resolver': {
@@ -61,8 +57,8 @@ module.exports = {
       'error',
       'always',
       {
-        'js': 'never',
-        'jsx': 'never',
+        js: 'never',
+        jsx: 'never',
       },
     ],
     'import/order': 'off',
