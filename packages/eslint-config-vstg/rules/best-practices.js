@@ -39,7 +39,12 @@ module.exports = {
       'warn',
       {
         ignoreArrayIndexes: true,
-        ignore: [ 1 ], // For the sake of (array.length - 1)
+        ignore: [
+          -1, // array.indexOf() === -1
+          0, // array[0]
+          1, // array.length - 1
+          2, // JSON.strignify(obj, null, 2)
+        ],
       },
     ], // Review end of Q1/2017
     'no-multi-spaces': 'error',
