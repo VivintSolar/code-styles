@@ -22,7 +22,8 @@ module.exports = {
     },
   },
   rules: {
-    'node/no-unsupported-features': 'off',
+    'node/no-unsupported-features/es-syntax': 'off',
+    'node/no-unsupported-features/es-builtins': 'off',
 
     // Static analysis:
     'import/no-unresolved': 'error',
