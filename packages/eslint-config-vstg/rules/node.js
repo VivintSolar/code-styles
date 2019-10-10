@@ -12,11 +12,7 @@ module.exports = {
     'no-restricted-modules': 'off',
     'no-sync': 'off',
 
-    'node/no-unsupported-features/es-syntax': ['error', {
-      'ignores': []
-    }],
-    'node/no-unsupported-features/es-builtins': ['error', {
-      'ignores': []
-    }],
+    'node/no-unsupported-features/es-syntax': [ 'error', { 'ignores': [] } ],
+    'node/no-unsupported-features/es-builtins': [ 'error', { 'ignores': [] } ],
   },
 };
